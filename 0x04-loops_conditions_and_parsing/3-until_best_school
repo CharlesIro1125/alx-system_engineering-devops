@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script that prints Best School repeatedly
+N=10
+until [ "$N" -eq 0 ]; do 
+echo "Best School"
+((--N))
+done

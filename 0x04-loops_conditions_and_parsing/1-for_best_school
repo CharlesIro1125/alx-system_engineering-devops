@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that prints Best School repeatedly
+lis=($(seq 1 1 10))
+for i in ${lis[@]}; do echo "Best School"; done

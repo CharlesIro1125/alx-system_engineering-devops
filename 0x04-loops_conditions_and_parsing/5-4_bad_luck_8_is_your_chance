@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that prints Best School repeatedly
+N=1
+while [ "$N" -lt 11 ]; 
+do
+	if [ "$N" -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ "$N" -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((++N));
+done
