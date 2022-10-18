@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Bash script that prints Best School repeatedly
-N=10
-while [ "$N" -gt 0 ]; 
+N=1
+while [ "$N" -lt 11 ]; 
 do
-	if [ "$N" -ne 2 ]
+	if [ "$N" -ne 9 ]
 	then
 		echo "Best School"
 	else
 		echo "Hi"
 	fi
-	((--N));
+	((N++));
 done
