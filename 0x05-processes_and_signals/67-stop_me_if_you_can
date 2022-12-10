@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# kills the 7-highlander process
+# with a SIGTERM signal
+pkill -f 7-highlander

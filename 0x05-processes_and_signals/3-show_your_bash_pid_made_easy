@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display all process for all users
+# incuding those which might not have a TTY
+ps -eo pid,comm | grep bash

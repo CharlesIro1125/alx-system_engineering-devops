@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Write a bash script that display
+# To infinity and beyond
+echo $$ > /var/run/myscript.pid
+trap "echo 'I hate the kill command';func" SIGTERM
+trap "echo 'Y U no love me?!'" SIGINT
+trap func SIGQUIT
+func(){ rm /var/run/myscript.pid
+	exit
+}
+while $true;
+do
+	echo "To infinity and beyond"
+	(sleep 2)
+done
