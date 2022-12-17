@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-# install nginx on the server
+# install nginx on the server and change var/www/html
 sudo apt-get -y install nginx
+#sudo mkdir -p /var/www/test/html
+echo 'Hello World!' > /tmp/test
+sudo mv /tmp/test /var/www/html/index.html
+sudo service nginx restart
+#sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/test
+#sudo sed -ri -e 's/root[ a-zA-Z0-9\/]+;*$/root \/var\/www\/test\/html;/g' /etc/nginx/sites-available/default
+#sudo ln -s /etc/nginx/sites-available/test /etc/nginx/sites-enabled/
